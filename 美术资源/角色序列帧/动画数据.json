@@ -1,0 +1,1267 @@
+{
+  "name": "白衣侠客",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "format": "RGBA PNG",
+  "direction": "右",
+  "pivot": {
+    "x": 128,
+    "y": 236
+  },
+  "animations": {
+    "站立": {
+      "sheet": "精灵图/站立.png",
+      "frameCount": 6,
+      "loop": true,
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/站立/站立_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 140
+        },
+        {
+          "index": 1,
+          "file": "单帧/站立/站立_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 140
+        },
+        {
+          "index": 2,
+          "file": "单帧/站立/站立_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 140
+        },
+        {
+          "index": 3,
+          "file": "单帧/站立/站立_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 140
+        },
+        {
+          "index": 4,
+          "file": "单帧/站立/站立_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 140
+        },
+        {
+          "index": 5,
+          "file": "单帧/站立/站立_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 140
+        }
+      ]
+    },
+    "奔跑": {
+      "sheet": "精灵图/奔跑.png",
+      "frameCount": 10,
+      "loop": true,
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/奔跑/奔跑_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 1,
+          "file": "单帧/奔跑/奔跑_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 2,
+          "file": "单帧/奔跑/奔跑_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 3,
+          "file": "单帧/奔跑/奔跑_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 4,
+          "file": "单帧/奔跑/奔跑_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 5,
+          "file": "单帧/奔跑/奔跑_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 6,
+          "file": "单帧/奔跑/奔跑_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 7,
+          "file": "单帧/奔跑/奔跑_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 8,
+          "file": "单帧/奔跑/奔跑_08.png",
+          "rect": {
+            "x": 2048,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 9,
+          "file": "单帧/奔跑/奔跑_09.png",
+          "rect": {
+            "x": 2304,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        }
+      ]
+    },
+    "跳跃": {
+      "sheet": "精灵图/跳跃.png",
+      "frameCount": 6,
+      "loop": false,
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/跳跃/跳跃_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 110
+        },
+        {
+          "index": 1,
+          "file": "单帧/跳跃/跳跃_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 80
+        },
+        {
+          "index": 2,
+          "file": "单帧/跳跃/跳跃_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        },
+        {
+          "index": 3,
+          "file": "单帧/跳跃/跳跃_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 180
+        },
+        {
+          "index": 4,
+          "file": "单帧/跳跃/跳跃_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        },
+        {
+          "index": 5,
+          "file": "单帧/跳跃/跳跃_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 110
+        }
+      ]
+    },
+    "短距冲刺": {
+      "sheet": "精灵图/短距冲刺.png",
+      "frameCount": 8,
+      "loop": false,
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/短距冲刺/短距冲刺_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 1,
+          "file": "单帧/短距冲刺/短距冲刺_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 2,
+          "file": "单帧/短距冲刺/短距冲刺_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 3,
+          "file": "单帧/短距冲刺/短距冲刺_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 4,
+          "file": "单帧/短距冲刺/短距冲刺_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 5,
+          "file": "单帧/短距冲刺/短距冲刺_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 6,
+          "file": "单帧/短距冲刺/短距冲刺_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 75
+        },
+        {
+          "index": 7,
+          "file": "单帧/短距冲刺/短距冲刺_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        }
+      ]
+    },
+    "拔剑斩闪": {
+      "sheet": "精灵图/拔剑斩闪.png",
+      "frameCount": 12,
+      "loop": false,
+      "hitFrame": 5,
+      "rootMotion": {
+        "startFrame": 6,
+        "endFrame": 9,
+        "suggestedDistanceX": 96,
+        "unit": "gamePixel",
+        "note": "前闪位移建议由角色控制器执行"
+      },
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 1,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 80
+        },
+        {
+          "index": 2,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 3,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 50
+        },
+        {
+          "index": 4,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 5,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 6,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 7,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 40
+        },
+        {
+          "index": 8,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_08.png",
+          "rect": {
+            "x": 2048,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 9,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_09.png",
+          "rect": {
+            "x": 2304,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 80
+        },
+        {
+          "index": 10,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_10.png",
+          "rect": {
+            "x": 2560,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 11,
+          "file": "单帧/拔剑斩闪/拔剑斩闪_11.png",
+          "rect": {
+            "x": 2816,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 120
+        }
+      ]
+    },
+    "拔剑上劈": {
+      "sheet": "精灵图/拔剑上劈.png",
+      "frameCount": 10,
+      "loop": false,
+      "direction": "右",
+      "startSwordState": "sheathed",
+      "endSwordState": "drawn",
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/拔剑上劈/拔剑上劈_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 1,
+          "file": "单帧/拔剑上劈/拔剑上劈_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 2,
+          "file": "单帧/拔剑上劈/拔剑上劈_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 55
+        },
+        {
+          "index": 3,
+          "file": "单帧/拔剑上劈/拔剑上劈_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 50
+        },
+        {
+          "index": 4,
+          "file": "单帧/拔剑上劈/拔剑上劈_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 5,
+          "file": "单帧/拔剑上劈/拔剑上劈_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 50
+        },
+        {
+          "index": 6,
+          "file": "单帧/拔剑上劈/拔剑上劈_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 80
+        },
+        {
+          "index": 7,
+          "file": "单帧/拔剑上劈/拔剑上劈_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 8,
+          "file": "单帧/拔剑上劈/拔剑上劈_08.png",
+          "rect": {
+            "x": 2048,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        },
+        {
+          "index": 9,
+          "file": "单帧/拔剑上劈/拔剑上劈_09.png",
+          "rect": {
+            "x": 2304,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 120
+        }
+      ],
+      "hitFrame": 6
+    },
+    "下劈": {
+      "sheet": "精灵图/下劈.png",
+      "frameCount": 8,
+      "loop": false,
+      "direction": "右",
+      "startSwordState": "drawn",
+      "endSwordState": "drawn",
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/下劈/下劈_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 80
+        },
+        {
+          "index": 1,
+          "file": "单帧/下劈/下劈_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 2,
+          "file": "单帧/下劈/下劈_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 3,
+          "file": "单帧/下劈/下劈_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 4,
+          "file": "单帧/下劈/下劈_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 75
+        },
+        {
+          "index": 5,
+          "file": "单帧/下劈/下劈_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        },
+        {
+          "index": 6,
+          "file": "单帧/下劈/下劈_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 7,
+          "file": "单帧/下劈/下劈_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 110
+        }
+      ],
+      "hitFrame": 4
+    },
+    "转身横斩": {
+      "sheet": "精灵图/转身横斩.png",
+      "frameCount": 10,
+      "loop": false,
+      "direction": "右→右",
+      "startSwordState": "drawn",
+      "endSwordState": "drawn",
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/转身横斩/转身横斩_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 1,
+          "file": "单帧/转身横斩/转身横斩_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 2,
+          "file": "单帧/转身横斩/转身横斩_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 55
+        },
+        {
+          "index": 3,
+          "file": "单帧/转身横斩/转身横斩_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 50
+        },
+        {
+          "index": 4,
+          "file": "单帧/转身横斩/转身横斩_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 55
+        },
+        {
+          "index": 5,
+          "file": "单帧/转身横斩/转身横斩_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 65
+        },
+        {
+          "index": 6,
+          "file": "单帧/转身横斩/转身横斩_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 55
+        },
+        {
+          "index": 7,
+          "file": "单帧/转身横斩/转身横斩_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 8,
+          "file": "单帧/转身横斩/转身横斩_08.png",
+          "rect": {
+            "x": 2048,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 75
+        },
+        {
+          "index": 9,
+          "file": "单帧/转身横斩/转身横斩_09.png",
+          "rect": {
+            "x": 2304,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 110
+        }
+      ],
+      "hitFrame": 8,
+      "turnDegrees": 360,
+      "description": "完成一整圈360°旋转后，恢复朝右并向前挥剑横扫",
+      "spinFrames": [
+        0,
+        5
+      ],
+      "slashFrames": [
+        6,
+        9
+      ]
+    },
+    "收剑": {
+      "sheet": "精灵图/收剑.png",
+      "frameCount": 6,
+      "loop": false,
+      "direction": "右",
+      "startSwordState": "drawn",
+      "endSwordState": "sheathed",
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/收剑/收剑_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 1,
+          "file": "单帧/收剑/收剑_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 80
+        },
+        {
+          "index": 2,
+          "file": "单帧/收剑/收剑_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 3,
+          "file": "单帧/收剑/收剑_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 4,
+          "file": "单帧/收剑/收剑_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        },
+        {
+          "index": 5,
+          "file": "单帧/收剑/收剑_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 130
+        }
+      ]
+    },
+    "格挡": {
+      "sheet": "精灵图/格挡.png",
+      "frameCount": 8,
+      "loop": false,
+      "direction": "右",
+      "startSwordState": "drawn",
+      "endSwordState": "drawn",
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/格挡/格挡_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 1,
+          "file": "单帧/格挡/格挡_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 2,
+          "file": "单帧/格挡/格挡_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 55
+        },
+        {
+          "index": 3,
+          "file": "单帧/格挡/格挡_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 4,
+          "file": "单帧/格挡/格挡_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 120
+        },
+        {
+          "index": 5,
+          "file": "单帧/格挡/格挡_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 70
+        },
+        {
+          "index": 6,
+          "file": "单帧/格挡/格挡_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        },
+        {
+          "index": 7,
+          "file": "单帧/格挡/格挡_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 110
+        }
+      ],
+      "guardFrame": 4,
+      "blockImpactFrame": 5,
+      "guardHoldFrames": [
+        4,
+        6
+      ]
+    },
+    "受击硬直": {
+      "sheet": "精灵图/受击硬直.png",
+      "frameCount": 6,
+      "loop": false,
+      "direction": "右",
+      "startSwordState": "drawn",
+      "endSwordState": "drawn",
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/受击硬直/受击硬直_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 1,
+          "file": "单帧/受击硬直/受击硬直_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 65
+        },
+        {
+          "index": 2,
+          "file": "单帧/受击硬直/受击硬直_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 90
+        },
+        {
+          "index": 3,
+          "file": "单帧/受击硬直/受击硬直_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 110
+        },
+        {
+          "index": 4,
+          "file": "单帧/受击硬直/受击硬直_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 100
+        },
+        {
+          "index": 5,
+          "file": "单帧/受击硬直/受击硬直_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 140
+        }
+      ],
+      "hitFrame": 0,
+      "stunFrames": [
+        0,
+        4
+      ],
+      "hitDirection": "右→左"
+    },
+    "重击跪地滑退": {
+      "sheet": "精灵图/重击跪地滑退.png",
+      "frameCount": 10,
+      "loop": false,
+      "direction": "右",
+      "knockbackDirection": "右→左",
+      "startSwordState": "drawn",
+      "endSwordState": "planted",
+      "hitFrame": 0,
+      "kneelFrame": 2,
+      "swordPlantFrame": 3,
+      "slideFrames": [
+        4,
+        7
+      ],
+      "stopFrame": 8,
+      "rootMotion": {
+        "startFrame": 4,
+        "endFrame": 7,
+        "suggestedDistanceX": -72,
+        "unit": "gamePixel",
+        "note": "向左滑退位移建议由角色控制器执行"
+      },
+      "frames": [
+        {
+          "index": 0,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_00.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 45
+        },
+        {
+          "index": 1,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_01.png",
+          "rect": {
+            "x": 256,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 65
+        },
+        {
+          "index": 2,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 75
+        },
+        {
+          "index": 3,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_03.png",
+          "rect": {
+            "x": 768,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 85
+        },
+        {
+          "index": 4,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_04.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 55
+        },
+        {
+          "index": 5,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_05.png",
+          "rect": {
+            "x": 1280,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 55
+        },
+        {
+          "index": 6,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_06.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 60
+        },
+        {
+          "index": 7,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_07.png",
+          "rect": {
+            "x": 1792,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 85
+        },
+        {
+          "index": 8,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_08.png",
+          "rect": {
+            "x": 2048,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 110
+        },
+        {
+          "index": 9,
+          "file": "单帧/重击跪地滑退/重击跪地滑退_09.png",
+          "rect": {
+            "x": 2304,
+            "y": 0,
+            "w": 256,
+            "h": 256
+          },
+          "durationMs": 150
+        }
+      ]
+    }
+  }
+}

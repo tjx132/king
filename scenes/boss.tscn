@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/boss.gd" id="1_boss"]
+[ext_resource type="AudioStream" path="res://assets/audio/boss_metal_impact.wav" id="2_metal"]
+
+[sub_resource type="SystemFont" id="SystemFont_dialogue"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC")
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_boss"]
+radius = 48.0
+height = 300.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_health_bg"]
+bg_color = Color(0.015, 0.02, 0.035, 0.92)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.45, 0.5, 0.62, 0.9)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_health_fill"]
+bg_color = Color(0.72, 0.08, 0.08, 0.95)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="Boss" type="CharacterBody2D"]
+visible = false
+collision_layer = 2
+floor_snap_length = 6.0
+script = ExtResource("1_boss")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+scale = Vector2(0.48, 0.48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -150)
+shape = SubResource("CapsuleShape2D_boss")
+disabled = true
+
+[node name="MetalImpactAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_metal")
+volume_db = -4.0
+max_distance = 1600.0
+
+[node name="DialogueLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="BossHealthBar" type="ProgressBar" parent="DialogueLayer"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -280.0
+offset_top = 28.0
+offset_right = 280.0
+offset_bottom = 54.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_health_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_health_fill")
+max_value = 300.0
+value = 300.0
+show_percentage = false
+
+[node name="Dialogue" type="Label" parent="DialogueLayer"]
+visible = false
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -170.0
+offset_right = -32.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.8, 0.93, 1, 1)
+theme_override_colors/font_outline_color = Color(0.01, 0.02, 0.04, 0.95)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = SubResource("SystemFont_dialogue")
+theme_override_font_sizes/font_size = 32
+text = "又来一个找死的"
+horizontal_alignment = 1
+vertical_alignment = 1

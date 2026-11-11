@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/death_screen.gd" id="1_death"]
+[ext_resource type="Script" path="res://scripts/blood_overlay.gd" id="2_blood"]
+
+[sub_resource type="SystemFont" id="SystemFont_death"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC")
+
+[node name="DeathScreen" type="CanvasLayer"]
+process_mode = 3
+layer = 30
+script = ExtResource("1_death")
+
+[node name="DeathRoot" type="Control" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="DeathRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.055, 0.002, 0.008, 0.84)
+
+[node name="Blood" type="Control" parent="DeathRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("2_blood")
+
+[node name="Center" type="CenterContainer" parent="DeathRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="VBoxContainer" parent="DeathRoot/Center"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Title" type="Label" parent="DeathRoot/Center/Menu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.015, 0.025, 1)
+theme_override_colors/font_outline_color = Color(0.025, 0.001, 0.003, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = SubResource("SystemFont_death")
+theme_override_font_sizes/font_size = 88
+text = "你 死 了"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="DeathRoot/Center/Menu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.62, 0.22, 0.22, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.001, 0.003, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("SystemFont_death")
+theme_override_font_sizes/font_size = 24
+text = "鲜 血 染 红 月 夜"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="DeathRoot/Center/Menu"]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 2
+
+[node name="RestartButton" type="Button" parent="DeathRoot/Center/Menu"]
+layout_mode = 2
+text = "重新开始"
+
+[node name="MenuButton" type="Button" parent="DeathRoot/Center/Menu"]
+layout_mode = 2
+text = "返回主菜单"

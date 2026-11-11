@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://da3dqsain8x8p"]
+
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_player"]
+[ext_resource type="Script" uid="uid://sc1h7rxog1y" path="res://scripts/animated_background.gd" id="4_background"]
+[ext_resource type="PackedScene" path="res://scenes/boss.tscn" id="5_boss"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jyhfs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qyo16"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jous3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fbmb5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_platform"]
+size = Vector2(4608, 192)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(64, 720)
+
+[node name="Main2D" type="Node2D" unique_id=1454905060]
+
+[node name="Background" type="Node2D" parent="." unique_id=832285115]
+z_index = -10
+
+[node name="AnimatedBackground1" type="AnimatedSprite2D" parent="Background" unique_id=871721921]
+position = Vector2(640, 360)
+sprite_frames = SubResource("SpriteFrames_jyhfs")
+script = ExtResource("4_background")
+
+[node name="AnimatedBackground2" type="AnimatedSprite2D" parent="Background" unique_id=1726591099]
+position = Vector2(1920, 360)
+sprite_frames = SubResource("SpriteFrames_qyo16")
+script = ExtResource("4_background")
+
+[node name="AnimatedBackground3" type="AnimatedSprite2D" parent="Background" unique_id=2104488603]
+position = Vector2(3200, 360)
+sprite_frames = SubResource("SpriteFrames_jous3")
+script = ExtResource("4_background")
+
+[node name="AnimatedBackground4" type="AnimatedSprite2D" parent="Background" unique_id=433272]
+position = Vector2(4480, 360)
+sprite_frames = SubResource("SpriteFrames_fbmb5")
+script = ExtResource("4_background")
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=577785596]
+position = Vector2(0, 648)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=481208854]
+position = Vector2(2304, 96)
+shape = SubResource("RectangleShape2D_platform")
+
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=1039876949]
+position = Vector2(-32, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=968429113]
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=1377401832]
+position = Vector2(4640, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=578039501]
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Player" parent="." unique_id=1592981270 instance=ExtResource("3_player")]
+position = Vector2(160, 648)
+
+[node name="Boss" parent="." instance=ExtResource("5_boss")]
+player_path = NodePath("../Player")
